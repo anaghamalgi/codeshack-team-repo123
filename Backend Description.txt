@@ -6,4 +6,4 @@ The backend also integrates with a MySQL database to maintain calculation histor
 
 The backend is designed with modular components to ensure maintainability, reliability, and easy integration with the frontend. It also handles invalid inputs and mathematical errors, such as division by zero and invalid logarithmic operations, to provide a smooth and reliable user experience.
 
-Contributed by-Anagha Malgi.
+Contributed by-Anagha Malgi. 
