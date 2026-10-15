@@ -1,0 +1,330 @@
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #100d20;
+    --panel: #211b3b;
+    --panel-light: #2d2550;
+    --border: #403464;
+    --purple: #a855f7;
+    --blue: #6366f1;
+    --text: #f7f4ff;
+    --muted: #b9b0d5;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    min-height: 100svh;
+    background:
+        radial-gradient(ellipse at top left, #302052 0%, transparent 45%),
+        linear-gradient(135deg, #100d20, #17132c 55%, #111a35);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px 18px;
+}
+
+button, input, select {
+    font: inherit;
+}
+
+button {
+    color: var(--text);
+    cursor: pointer;
+    transition: background 0.15s, transform 0.15s;
+}
+
+button:hover {
+    filter: brightness(1.15);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+.app {
+    width: min(100%, 1100px);
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.eyebrow {
+    margin: 0 0 4px;
+    color: #c4b5fd;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(21px, 3vw, 29px);
+    letter-spacing: -0.7px;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.angle-button,
+.action-button {
+    border: 1px solid #a78bfa;
+    border-radius: 9px;
+    background: linear-gradient(120deg, var(--purple), var(--blue));
+    font-weight: bold;
+}
+
+.angle-button {
+    min-width: 66px;
+    padding: 9px 14px;
+}
+
+.display-card,
+.panel {
+    background: rgba(33, 27, 59, 0.96);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.display-card {
+    padding: 10px 14px 8px;
+    margin-bottom: 10px;
+}
+
+.display-card label {
+    display: block;
+    color: var(--muted);
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    margin-bottom: 4px;
+}
+
+#display {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: clamp(24px, 4vw, 32px);
+    font-weight: 600;
+    text-align: right;
+}
+
+#message {
+    min-height: 13px;
+    margin: 4px 0 0;
+    color: #c4b5fd;
+    font-size: 10px;
+    text-align: right;
+}
+
+.workspace {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+    gap: 10px;
+    align-items: stretch;
+}
+
+.panel {
+    padding: 12px;
+    min-width: 0;
+}
+
+.keypad-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.keypad {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(8, minmax(30px, 1fr));
+    gap: 6px;
+}
+
+.keypad button {
+    min-width: 0;
+    min-height: 30px;
+    padding: 4px 2px;
+    border: 1px solid #40375f;
+    border-radius: 8px;
+    background: var(--panel-light);
+    font-size: clamp(12px, 1.4vw, 15px);
+}
+
+.keypad button.utility {
+    background: #49335f;
+}
+
+.keypad button.operator {
+    background: #393064;
+    color: #ddd6fe;
+}
+
+.keypad button.equals {
+    background: linear-gradient(120deg, var(--purple), var(--blue));
+    border-color: transparent;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.side-panels {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    align-content: start;
+}
+
+.description {
+    color: var(--muted);
+    font-size: 11px;
+    margin: -4px 0 9px;
+    line-height: 1.4;
+}
+
+.inline-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.three-fields {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.conversion-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+    margin-bottom: 8px;
+}
+
+.inline-fields label,
+.conversion-fields label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.inline-fields input,
+.conversion-fields input,
+.conversion-fields select {
+    width: 100%;
+    min-width: 0;
+    height: 30px;
+    padding: 5px 7px;
+    border: 1px solid #514779;
+    border-radius: 7px;
+    outline: none;
+    background: #151128;
+    color: white;
+    font-size: 12px;
+}
+
+.action-button {
+    width: 100%;
+    padding: 8px;
+    font-size: 11px;
+}
+
+.result {
+    min-height: 14px;
+    margin: 7px 0 0;
+    color: #ddd6fe;
+    font-size: 11px;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    margin-top: 9px;
+    color: #8f86ac;
+    font-size: 9px;
+    text-align: center;
+}
+
+/* Smaller screens */
+@media (max-width: 700px) {
+    body {
+        padding: 12px;
+    }
+
+    .workspace {
+        grid-template-columns: 1fr;
+    }
+
+    .keypad {
+        grid-template-rows: repeat(8, 40px);
+    }
+
+    .side-panels {
+        grid-template-rows: auto;
+    }
+}
+
+/* Compact layout for shorter desktop windows */
+@media (min-width: 701px) and (max-height: 780px) {
+    body {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .header {
+        margin-bottom: 6px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .display-card {
+        padding: 7px 12px 5px;
+        margin-bottom: 7px;
+    }
+
+    #display {
+        font-size: 25px;
+    }
+
+    .panel {
+        padding: 9px;
+    }
+
+    .workspace,
+    .side-panels {
+        gap: 7px;
+    }
+
+    .keypad {
+        grid-template-rows: repeat(8, minmax(27px, 1fr));
+        gap: 4px;
+    }
+
+    .keypad button {
+        min-height: 27px;
+        font-size: 12px;
+    }
+
+    .side-panels h2 {
+        margin-bottom: 7px;
+    }
+
+    footer {
+        margin-top: 5px;
+    }
+}
