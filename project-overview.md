@@ -1,8 +1,8 @@
-\# Scientific Calculator — Project Idea and Working
+# Scientific Calculator — Project Idea and Working
 
 
 
-\## 1. Project Idea
+## 1. Project Idea
 
 
 
@@ -22,7 +22,7 @@ The objective is to make scientific calculations more convenient, organized, and
 
 
 
-\## 2. Problem Statement
+## 2. Problem Statement
 
 
 
@@ -34,7 +34,7 @@ The proposed Scientific Calculator addresses this problem by bringing these func
 
 
 
-\## 3. Working of the Application
+## 3. Working of the Application
 
 
 
@@ -42,7 +42,7 @@ The application is designed to work through three main layers: the frontend, bac
 
 
 
-\### Step 1: User Input
+### Step 1: User Input
 
 
 
@@ -50,7 +50,7 @@ The user accesses the calculator through a web browser and selects the required 
 
 
 
-\### Step 2: Frontend Interaction
+### Step 2: Frontend Interaction
 
 
 
@@ -62,7 +62,7 @@ In the current frontend, several calculations are processed directly using JavaS
 
 
 
-\### Step 3: Backend Processing
+### Step 3: Backend Processing
 
 
 
@@ -74,7 +74,7 @@ For example, when a user submits the coefficients of a quadratic equation, the b
 
 
 
-\### Step 4: Database Interaction
+### Step 4: Database Interaction
 
 
 
@@ -86,7 +86,7 @@ The database is not needed for every mathematical calculation; its role depends 
 
 
 
-\### Step 5: Result Display
+### Step 5: Result Display
 
 
 
@@ -98,7 +98,7 @@ The user can then perform another calculation without needing to switch to a dif
 
 
 
-\## 4. Major Functionalities
+## 4. Major Functionalities
 
 
 
@@ -106,39 +106,39 @@ The application brings together the following features:
 
 
 
-\- \*\*Basic arithmetic:\*\* Addition, subtraction, multiplication, division, and modulus.
+- **Basic arithmetic:** Addition, subtraction, multiplication, division, and modulus.
 
-\- \*\*Angle conversion:\*\* Conversion between degrees and radians.
+- **Angle conversion:** Conversion between degrees and radians.
 
-\- \*\*Trigonometric calculations:\*\* Sine, cosine, and tangent, along with their inverse functions.
+- **Trigonometric calculations:** Sine, cosine, and tangent, along with their inverse functions.
 
-\- \*\*Powers and roots:\*\* Exponentiation, squares, and square roots.
+- **Powers and roots:** Exponentiation, squares, and square roots.
 
-\- \*\*Logarithmic calculations:\*\* Natural logarithm, base-10 logarithm, and logarithms with a user-defined base.
+- **Logarithmic calculations:** Natural logarithm, base-10 logarithm, and logarithms with a user-defined base.
 
-\- \*\*Quadratic equation solver:\*\* Calculation of real or complex roots for a quadratic equation.
+- **Quadratic equation solver:** Calculation of real or complex roots for a quadratic equation.
 
-\- \*\*Physical unit conversion:\*\* Conversion of length, mass, and temperature using the units supported by the current frontend.
-
-
-
-\## 5. Technology Stack
+- **Physical unit conversion:** Conversion of length, mass, and temperature using the units supported by the current frontend.
 
 
 
-\- \*\*HTML:\*\* Structures the calculator interface.
-
-\- \*\*CSS:\*\* Styles the interface and provides responsive layouts.
-
-\- \*\*JavaScript:\*\* Handles frontend interactions and currently implements several calculations.
-
-\- \*\*Java Spring Boot:\*\* Provides the planned backend services and REST API integration.
-
-\- \*\*MySQL:\*\* Provides database storage for application data when required.
+## 5. Technology Stack
 
 
 
-\## 6. Expected Outcome
+- **HTML:** Structures the calculator interface.
+
+- **CSS:** Styles the interface and provides responsive layouts.
+
+- **JavaScript:** Handles frontend interactions and currently implements several calculations.
+
+- **Java Spring Boot:** Provides the planned backend services and REST API integration.
+
+- **MySQL:** Provides database storage for application data when required.
+
+
+
+## 6. Expected Outcome
 
 
 
@@ -150,7 +150,7 @@ The project also demonstrates how frontend technologies, a Java backend, and a r
 
 
 
-\## 7. Conclusion
+## 7. Conclusion
 
 
 
