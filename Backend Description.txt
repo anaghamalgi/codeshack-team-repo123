@@ -1,0 +1,9 @@
+Backend Description
+
+The backend of SmartCalc is developed using Java and Spring Boot. It handles mathematical computations, scientific calculations, quadratic equation solving, and physical unit conversions through RESTful APIs. It validates user inputs, processes calculation requests, and returns accurate results to the frontend.
+
+The backend also integrates with a MySQL database to maintain calculation history, including expressions, operation types, results, and timestamps. It provides functionality to retrieve previous calculations and delete individual or all history entries.
+
+The backend is designed with modular components to ensure maintainability, reliability, and easy integration with the frontend. It also handles invalid inputs and mathematical errors, such as division by zero and invalid logarithmic operations, to provide a smooth and reliable user experience.
+
+Contributed by-Anagha Malgi. 
