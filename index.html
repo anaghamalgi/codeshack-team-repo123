@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <header class="header">
+            <div>
+                <p class="eyebrow">CODESHACK · FRONTEND</p>
+                <h1>Scientific Calculator</h1>
+            </div>
+            <button id="angle-mode" class="angle-button">DEG</button>
+        </header>
+
+        <section class="display-card">
+            <label for="display">CALCULATION</label>
+            <input id="display" type="text" value="0" autocomplete="off"
+                   spellcheck="false" aria-label="Calculator display">
+            <p id="message" role="status" aria-live="polite">Ready to calculate.</p>
+        </section>
+
+        <div class="workspace">
+            <section class="panel keypad-panel">
+                <h2>Calculator</h2>
+                <div class="keypad">
+                    <button data-key="AC" class="utility">AC</button>
+                    <button data-key="DEL" class="utility">DEL</button>
+                    <button data-key="(">(</button>
+                    <button data-key=")">)</button>
+
+                    <button data-key="sin">sin</button>
+                    <button data-key="cos">cos</button>
+                    <button data-key="tan">tan</button>
+                    <button data-key="√">√</button>
+
+                    <button data-key="sin⁻¹">sin⁻¹</button>
+                    <button data-key="cos⁻¹">cos⁻¹</button>
+                    <button data-key="tan⁻¹">tan⁻¹</button>
+                    <button data-key="x²">x²</button>
+
+                    <button data-key="log">log</button>
+                    <button data-key="ln">ln</button>
+                    <button data-key="xʸ">xʸ</button>
+                    <button data-key="mod">mod</button>
+
+                    <button data-key="7">7</button>
+                    <button data-key="8">8</button>
+                    <button data-key="9">9</button>
+                    <button data-key="÷" class="operator">÷</button>
+
+                    <button data-key="4">4</button>
+                    <button data-key="5">5</button>
+                    <button data-key="6">6</button>
+                    <button data-key="×" class="operator">×</button>
+
+                    <button data-key="1">1</button>
+                    <button data-key="2">2</button>
+                    <button data-key="3">3</button>
+                    <button data-key="−" class="operator">−</button>
+
+                    <button data-key="0">0</button>
+                    <button data-key=".">.</button>
+                    <button data-key="=" class="equals">=</button>
+                    <button data-key="+" class="operator">+</button>
+                </div>
+            </section>
+
+            <div class="side-panels">
+                <section class="panel">
+                    <h2>Logarithm with any base</h2>
+                    <p class="description">Calculate log base b of a positive number.</p>
+                    <div class="inline-fields">
+                        <label>Number
+                            <input id="log-number" type="number" value="8" step="any">
+                        </label>
+                        <label>Base
+                            <input id="log-base" type="number" value="2" step="any">
+                        </label>
+                    </div>
+                    <button id="log-calculate" class="action-button">Calculate log</button>
+                </section>
+
+                <section class="panel">
+                    <h2>Quadratic equation</h2>
+                    <p class="description">Find roots of ax² + bx + c = 0.</p>
+                    <div class="inline-fields three-fields">
+                        <label>a
+                            <input id="quad-a" type="number" value="1" step="any">
+                        </label>
+                        <label>b
+                            <input id="quad-b" type="number" value="-3" step="any">
+                        </label>
+                        <label>c
+                            <input id="quad-c" type="number" value="2" step="any">
+                        </label>
+                    </div>
+                    <button id="quad-calculate" class="action-button">Find roots</button>
+                    <p id="quad-result" class="result">Roots appear here.</p>
+                </section>
+
+                <section class="panel">
+                    <h2>Unit converter</h2>
+                    <div class="conversion-fields">
+                        <label>Category
+                            <select id="unit-category">
+                                <option value="length">Length</option>
+                                <option value="mass">Mass</option>
+                                <option value="temperature">Temperature</option>
+                            </select>
+                        </label>
+                        <label>Value
+                            <input id="unit-value" type="number" value="1" step="any">
+                        </label>
+                        <label>From
+                            <select id="unit-from"></select>
+                        </label>
+                        <label>To
+                            <select id="unit-to"></select>
+                        </label>
+                    </div>
+                    <button id="unit-calculate" class="action-button">Convert units</button>
+                    <p id="unit-result" class="result">Converted value appears here.</p>
+                </section>
+            </div>
+        </div>
+
+        <footer>Built with HTML, CSS & JavaScript · CodeShack Week 1</footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
